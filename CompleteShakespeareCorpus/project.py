@@ -1,34 +1,7 @@
 import sys
 import os
 import matplotlib.pyplot as plt
-# import nltk
-# from nltk.collocations import *
-# othello_filter = lambda w: w.lower() in ['moor']
-# bigram_measures = nltk.collocations.BigramAssocMeasures()
-# trigram_measures = nltk.collocations.TrigramAssocMeasures()
-# finder = nltk.collocations.BigramCollocationFinder.from_words(nltk.corpus.genesis.words("othello.txt"))
-# #BigramCollocationFinder.from_words("abc def abc def eeee rrrr tttt yyyy uuuu iiii ooooo")#nltk.corpus.genesis.words('othello-tags.txt'))
-# #print(finder)
-# #print(finder.apply_word_filter(othello_filter))
-# #print(finder.score_ngrams(bigram_measures.pmi)[0])  # doctest: +NORMALIZE_WHITESPACE
-# bi_gram = finder.score_ngrams(bigram_measures.pmi)
-# charactersFile='Oth_char.txt' 
-# #Error check Characters file
-# try: 
-#     rawCharacters=open(charactersFile).read()
-# except IOError: 
-#     parser.error("Can't find Oth_char file. Do you have a characters.txt in this directory, or did you specify its location in an option?") 
-# 
-# 
-# character_list = rawCharacters.upper().split(',')
-# print(character_list)
-# for character in character_list:
-#     filename = character + '.txt'
-#     f = open('Othello/' + filename, 'w+')
-#     for i in bi_gram:
-#         if character.upper() == (i[0][0]).upper() or character.upper() == (i[0][1]).upper():
-#             f.write(str(i) +"\n")
-#     f.close()
+
 savedict={}
 with open("../all-characters.txt","r") as f:
     chars = f.readlines();
